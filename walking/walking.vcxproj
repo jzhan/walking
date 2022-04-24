@@ -351,6 +351,7 @@
   <ItemGroup>
     <Media Include="sounds\getting_punched.wav" />
     <Media Include="sounds\land_step.wav" />
+    <Media Include="sounds\mechanical_bling.wav" />
     <Media Include="sounds\water_step.wav" />
   </ItemGroup>
   <ItemGroup>

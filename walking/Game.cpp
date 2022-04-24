@@ -75,9 +75,17 @@ void Game::Run()
 		if (CheckCollisionRecs(wildan.GetCollision(), props.invisible_fence.GetTreeRectangle1()) ||
 			CheckCollisionRecs(wildan.GetCollision(), props.invisible_fence.GetTreeRectangle2())) wildan.Stop();
 
-		if (CheckCollisionRecs(wildan.GetCollision(), props.natural_obj.GetBigStone1Coll())) wildan.SetPosition(Vector2{ 3000.0f, 300.0f });
+		if (CheckCollisionRecs(wildan.GetCollision(), props.natural_obj.GetBigStone1Coll()))
+		{
+			wildan.SetPosition(Vector2{ 3000.0f, 300.0f });
+			props.natural_obj.PlayMechanicalBlingSound();
+		}
 
-		if (CheckCollisionRecs(wildan.GetCollision(), props.natural_obj.GetBigStone2Coll())) wildan.SetPosition(Vector2{ 40.0f, 140.0f });
+		if (CheckCollisionRecs(wildan.GetCollision(), props.natural_obj.GetBigStone2Coll()))
+		{
+			wildan.SetPosition(Vector2{ 40.0f, 140.0f });
+			props.natural_obj.PlayMechanicalBlingSound();
+		}
 
 		m_camera.EndMode();
 		EndDrawing();

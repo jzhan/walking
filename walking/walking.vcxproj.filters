@@ -80,6 +80,9 @@
     <Media Include="sounds\getting_punched.wav">
       <Filter>sounds</Filter>
     </Media>
+    <Media Include="sounds\mechanical_bling.wav">
+      <Filter>sounds</Filter>
+    </Media>
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\map\dreamland.png">
